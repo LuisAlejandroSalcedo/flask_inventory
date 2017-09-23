@@ -44,10 +44,10 @@ for d in datos:
         desc += d.replace('\n', '<BR>')
         lista.append(d)
     if d.find('Versi¢n del sistema operativo:') == 0:
-        desc += d.replace('\n', '<BR>')
+        desc += d.replace('\n', '<BR>').replace('¢', 'o')
         lista.append(d)
     if d.find('Fecha de instalaci¢n original:') == 0:
-        desc += d.replace('\n', '<BR>')
+        desc += d.replace('\n', '<BR>').replace('¢', 'o')
         lista.append(d)
     if d.find('Fabricante del sistema:') == 0:
         desc += d.replace('\n', '<BR>')
@@ -61,7 +61,7 @@ for d in datos:
         desc += d.replace('\n', '<BR>')
         lista.append(d)
     if d.find('Cantidad total de memoria f¡sica:') == 0:
-        desc += d.replace('\n', '<BR>')
+        desc += d.replace('\n', '<BR>').replace('¡', 'i')
         lista.append(d)
     if d.find('Dominio:') == 0:
         desc += d.replace('\n', '<BR>')
